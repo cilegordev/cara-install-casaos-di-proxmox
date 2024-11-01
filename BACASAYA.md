@@ -14,10 +14,10 @@ bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/ct/casaos.sh)"
 - Tunggu beberapa saat jika berhasil akan muncul IP untuk membuka **CasaOS** kalian </br>
 - Setelah muncul ip pada Shell pastekan di Tab baru pada browser kalian </br>
 - Masukan akun baru sebagai admin atau ID yang kalian inginkan </br>
-- Setelah membuat akun selamat... kamu sudah memasuki tampilan awal dari CasaOS yang di install di Proxmox </br>
+- Setelah membuat akun selamat... kamu sudah memasuki tampilan awal dari CasaOS yang di install pada Proxmox </br>
 
 # Troubleshooting ( Pemecah masalah )
-Jika kalian gagal membuka IP CasaOS saya rasa ada ketergantungan paket yang kurang untuk melengkapinya </br>
+Jika kalian gagal membuka IP CasaOS saya rasa ada ketergantungan paket yang kurang dan untuk melengkapinya jalankan perintah di bawah ini </br>
 ```bash 
 nano /etc/apt/sources.list.d/ceph.list
 #deb https://enterprise.proxmox.com/debian/ceph-quincy bookworm enterprise (beri # pada ujung repositori) 
