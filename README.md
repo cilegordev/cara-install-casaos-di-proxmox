@@ -28,15 +28,15 @@ bash -c "$(wget -qLO - https://github.com/tteck/Proxmox/raw/main/ct/casaos.sh)"
 Jika kalian gagal membuka IP CasaOS saya rasa ada ketergantungan paket yang kurang dan untuk melengkapinya jalankan perintah di bawah ini </br>
 ```bash 
 nano /etc/apt/sources.list.d/ceph.list
-#deb https://enterprise.proxmox.com/debian/ceph-quincy bookworm enterprise (beri # pada ujung repositori) 
+#deb https://enterprise.proxmox.com/debian/ceph-quincy bookworm enterprise (beri # pada awal repositori) 
 ```
 ```bash
 nano /etc/apt/sources.list.d/pve-enterprise.list
-#deb https://enterprise.proxmox.com/debian/pve bookworm pve-enterprise (beri # pada ujung repositori) 
+#deb https://enterprise.proxmox.com/debian/pve bookworm pve-enterprise (beri # pada awal repositori) 
 ```
 ```bash
 nano /etc/apt/sources.list
-# proxmox server
+# Proxmox VE pve-no-subscription repository provided by proxmox.com
 deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription
 ```
 Alternatif jika tidak bisa menggunakan wget
